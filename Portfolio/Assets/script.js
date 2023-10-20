@@ -1,14 +1,5 @@
 // PortFolio Link : https://leoniw101.github.io/
 
-// https://pages.github.com/ - hoe portfolio met GitPages maken
-
-// https://fmontes.com/blog/how-to-create-a-portfolio-as-a-frontend-developer-with-no-experience 
-
-// https://www.freecodecamp.org/news/how-to-build-a-developer-portfolio-website/ Stap voor stap bouwen simpele website
-
-//Gitrepo naar bovenstaande site https://github.com/Ksound22/developer-portfolio/tree/master
-
-
 // Nav hamburgerburger selections
 const burger = document.querySelector("#burger-menu");
 const ul = document.querySelector("nav ul");

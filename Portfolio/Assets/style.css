@@ -2,15 +2,20 @@
 
 /* Variables */
 :root {
-  --font-family: "Roboto", sans-serf;
+  --font-family: "Roboto", sans-serif;
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
-  --bg-color: #f48080;
-  --primary-color: #4756df;
-  --secondary-color: #ff7235;
-  --primary-shadow: #8b8eaf;
-  --secondary-shadow: #a17a69;
+  --bg-color: #68ca97;
+  --primary-color: #00010a;
+  --secondary-color: #ffffff;
+  --primary-shadow: #616265;
+  --secondary-shadow: #2b2b2b;
+  --label-bg-color: #ff5900;
+  --button-border-color: #00010a;
+  --button-hover-bg-color: #ffffff;
+  --button-hover-text-color: #ff5900;
+  --button-hover-border-color: #ff5900;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
@@ -49,8 +54,8 @@ body {
 }
 
 section {
-  /* max-width: 1100px;
-  margin: auto; */
+  max-width: 1100px;
+  margin: auto;
 }
 
 /* CSS Resets end */
@@ -134,7 +139,12 @@ nav ul li {
   padding: 0.3rem 0;
 }
 
+.centered {
+  text-align: center;
+}
+
 /* Hero section ends */
+
 
 /* More about */
 .more-about {
@@ -154,12 +164,20 @@ nav ul li {
 
 /* More about ends */
 
+
 /* Skills section */
 .skills {
   max-width: 68.75rem;
   margin: auto;
   text-align: center;
   margin-top: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  width: calc(50% - 10px);
+  margin-right: 10px;
 }
 
 .skill-header {
@@ -175,7 +193,25 @@ nav ul li {
   height: 11.25rem;
 }
 
+.future-skills {
+  text-align: center;
+}
+
+.centered-column {
+  width: 100%;
+}
+
+.icon-card {
+  transition: transform 0.3s ease;
+}
+
+.icon-card:hover {
+  transform: scale(1.1);
+
+}
+
 /* Skills section ends */
+
 
 /* Projects section */
 .projects {
@@ -186,7 +222,7 @@ nav ul li {
 
 .project-pic {
   width: 65%;
-  height: 60%;
+  height: 50%;
 }
 
 .projects-container {
@@ -214,8 +250,34 @@ nav ul li {
   margin-bottom: var(--bottom-margin);
 }
 
+.skill-label {
+  background-color: var(--label-bg-color);
+  color: var(--label-text-color);
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
 .project-details {
   margin-bottom: var(--bottom-margin);
+}
+
+.project-link {
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid var(--button-border-color);
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  width: 100px;
+}
+
+.project-link:hover {
+  background-color: var(--button-hover-bg-color);
+  color: var(--button-hover-text-color);
+  border: 1px solid var(--button-hover-border-color);
 }
 
 /* Projects section ends */
@@ -291,7 +353,7 @@ nav ul li {
   flex-direction: column;
   position: fixed;
   right: 1%;
-  bottom: 50%;
+  bottom: 75%;
 }
 
 .socicon {
@@ -310,8 +372,8 @@ nav ul li {
 }
 
 .up-arrow {
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 /* Scroll to top button ends */

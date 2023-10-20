@@ -14,9 +14,6 @@ const burger = document.querySelector("#burger-menu");
 const ul = document.querySelector("nav ul");
 const nav = document.querySelector("nav");
 
-// Scroll to top selection
-const scrollUp = document.querySelector("#scroll-up");
-
 // Select nav links
 const navLink = document.querySelectorAll(".nav-link");
 
@@ -32,11 +29,13 @@ navLink.forEach((link) =>
   })
 );
 
-// scroll to top functionality
-scrollUp.addEventListener("click", () => {
-  window.scrollTo({
+// Scroll to top selection
+const scrollUp = document.querySelector("#scroll-up");
+
+scrollUp.addEventListener('click', function() {
+  window.scroll({
     top: 0,
     left: 0,
-    behavior: "smooth",
+    behavior: 'smooth'
   });
 });
